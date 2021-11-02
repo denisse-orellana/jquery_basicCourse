@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery 1: Introduction</h1>
+        <div id="list" class="container">
+            <li>primer elemento </li>
+            <li>segundo elemento </li>
+            <li>tercer elemento </li>
+        </div>
+        <h2>hide() method</h2>
+        <button id="close-menu-button">Close menu</button>
+        <hr>
+    </div>
+    <div class="container">
+        <h1>jQuery 2: effects</h1>
+
+        <div class="container">
+            <menu id="menu">
+                <h6>Menu example</h6>
+                <li>primer elemento </li>
+                <li>segundo elemento </li>
+                <li>tercer elemento </li>
+            </menu>
+        </div>
+        <h2>slideToggle()</h2>
+        <button id="slideToggle">slideToggle method</button>
+        <h2>fadeIn || fadeOut</h2>
+        <button id="fadeOut">fadeOut effect</button>
+        <button id="fadeIn">fadeIn effect</button>
+        <h2>show</h2>
+        <button id="show">show effect</button>
+        <h2>toggle</h2>
+        <button id="toggle">toggle effect</button>
+        <h2>fadeToggle</h2>
+        <button id="fadeToggle">fadeToggle effect</button>
+        <h2>slideUp || slideDown</h2>
+        <button id="slideUp">slideUp effect</button>
+        <button id="slideDown">slideDown effect</button>
+        <h2>hide</h2>
+        <button id="hide">hide effect</button>
+        <hr>
+    </div>
+    <div class="container">
+        <h1>jQuery 3: Event handlers</h1>
+        
+        <div id="lorem" class="container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis facere fugiat, mollitia praesentium possimus perferendis excepturi, id porro, repellendus doloribus magnam odio fugit dolor natus dolorem quidem iusto. Accusamus, dolores.</p>
+        </div>
+        <h2>Event listeners: click, keyup, scroll, otros</h2>
+        <button id="click">hide | click event</button>
+        <h2>keyup event</h2>
+            <form>
+                <input id="target" type="text" value="Hello there">
+            </form>
+            <div id="other">
+                Trigger the handler pressing a key 
+            </div>
+        <h2>scroll event</h2>
+            <div id="target" style="overflow: scroll; width: 200px; height: 100px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.
+            </div>
+            <div id="other">
+                Trigger the handler
+            </div>
+            <div id="log"></div>
+        <h2>Event object</h2>
+        <p> => will hide the button</p>
+        <button id="button-lorem">button-lorem</button>
+        <h2>event.currentTarget attribute</h2>
+        <p> => will hide the clicked button</p>
+        <button class="blue-button" id="lorem">Button 1</button>
+        <button class="blue-button" id="lorem">Button 2</button>
+        <button class="blue-button" id="lorem">Button 3</button>
+        <h2>"on" method chaining</h2>
+        <p>=> will show and hide lorem paragraph in 'mouseenter' mode</p>
+        <button id="lorem-button">Button</button>
+        <h2>on method</h2>
+        <button id="login">login</button>
+        <div id="login-form">
+            <input type="email" name="" id="">
+            <input type="date" name="">
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <h1> jQuery 4: Style methods</h1>
+
+        <h2>.animate</h2>
+        <div id="div" class="container">
+            <p>To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+            <div style="background:#98bf21;height:40px;width:40px;position:absolute;"></div>
+            <button id="green" class='mb-3'>Start Animation</button>
+        </div>
+
+        <h2>.css method</h2>
+        <p class="text">lorem ipsum dolor sit amet</p>
+        <button class="button">Button to animate paragraph</button>
+
+        <h2>toggleClass()</h2>
+        
+        <button>Toggle class "main" for p elements</button>
+        <p class='p'>This is a paragraph.</p>
+        <p class='p'>Adds the class .main from the style.css</p>
+        <style>
+            .main {
+              font-size: 120%;
+              color: blue;
+            }
+        </style>
+
+        <h2>.css() modify multiple properties</h2>
+        <h2 id="titleH2">One beautiful title: style done with Jquery .css({})</h2>
+
+        <h2>addClass || removeClass()</h2>
+        <p>The mouse leave triggers the class="button-active" to be added or removed it</p>
+        <button class="button1">addClass()</button>
+        <button class="button2 button-active">removeClass()</button>
+        <hr>
+    </div>
+    <div class="container">
+        <h1> jQuery 5: Traversing the DOM</h1>
+
+        <h2>.children()</h2>
+        <div class="parent">
+            <div class="item">Child 1</div>
+            <div class="item">Child 2</div>
+            <div class="item">Child 3</div>
+        </div>
+
+        <h2>.parent()</h2>
+        <ul>
+            <li class="one">Li</li>
+            <li class="two">Li</li>
+            <li class="three">Li</li>
+        </ul>
+
+        <h2>next()</h2>
+        <ul>
+            <li class="one">Li</li>
+            <li class="two">Li</li>
+            <li class="three">Li</li>
+        </ul>
+
+        <h2>find()</h2>
+        <ul id='shopping-list'>
+            <li class="list-item">Flour</li>
+            <li class="list-item">Sugar</li>
+        </ul>
+
+        <h2>siblings()</h2>
+        <button id="choice" class="selected">siblings()</button>
+
+        <h2>closest()</h2>
+    </div>
+    <!-- Jquery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
